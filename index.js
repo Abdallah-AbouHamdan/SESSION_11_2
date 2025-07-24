@@ -1,8 +1,10 @@
-let lap1 = 34
-let lap2 = 33
-let lap3 = 36
-function totallogs(){
-   let lapstime=lap1 + lap2 +lap3
-    console.log(lapstime)
+let lapsCompleted = 0
+function incrementLap() {
+    lapsCompleted = lapsCompleted + 1
 }
-totallogs()
+
+incrementLap()
+incrementLap()
+incrementLap()
+
+console.log(lapsCompleted)
