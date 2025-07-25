@@ -7,3 +7,7 @@ function increment(){
 function save(){
     console.log(count)
 }
+let namee ="boudy"
+let greeting = "Hi, my name is "
+let mygreeting = greeting + namee
+console.log(mygreeting)
