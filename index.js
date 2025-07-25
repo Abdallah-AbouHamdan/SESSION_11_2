@@ -1,13 +1,15 @@
+let countEl = document.getElementById("count-el")
+let saveEl = document.getElementById("save-el")
 let count = 0
 
-function increment(){
-    count = count +1
-    document.getElementById("count").innerHTML = count
+function increment() {
+    count += 1
+    countEl.textContent = count
 }
-function save(){
-    console.log(count)
+
+function save() {
+    let message = count + " - "
+    saveEl.textContent += message
+    countEl.textContent = 0
+    count = 0
 }
-let namee ="boudy"
-let greeting = "Hi, my name is "
-let mygreeting = greeting + namee
-console.log(mygreeting)
